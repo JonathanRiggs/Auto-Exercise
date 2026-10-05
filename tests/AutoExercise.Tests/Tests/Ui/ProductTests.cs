@@ -1,9 +1,9 @@
+using AutoExercise.Tests.Fixtures;
 using AutoExercise.Tests.Pages;
-using Microsoft.Playwright.NUnit;
 
 namespace AutoExercise.Tests.Tests.Ui;
 
-public class ProductTests : PageTest
+public class ProductTests : BaseUiTest
 {
     [Test, Description("TC-09 Search Product")]
     public async Task Search_ShowsOnlyMatchingProducts()

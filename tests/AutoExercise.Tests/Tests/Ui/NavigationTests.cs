@@ -1,10 +1,9 @@
+using AutoExercise.Tests.Fixtures;
 using AutoExercise.Tests.Pages;
-using Microsoft.Playwright.NUnit;
-using NUnit.Framework.Internal;
 
 namespace AutoExercise.Tests.Tests.Ui;
 
-public class NavigationTests : PageTest
+public class NavigationTests : BaseUiTest
 {
     [Test, Description("TC-07 Navigation - Verify Test Cases Page")]
     public async Task TestCasesLink_NavigatesToTestCasesPage()
