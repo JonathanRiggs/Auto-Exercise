@@ -24,7 +24,7 @@ public class ProductsPage(IPage page)
 
     public ILocator ViewProductLink(int index) => ProductCards.Nth(index).GetByRole(AriaRole.Link, new() { Name = "View Product" });
 
-    public async Task GogoAsync() => await page.GotoAsync("/products");
+    public async Task GotoAsync() => await page.GotoAsync("/products");
 
     public async Task ExpectLoadedAsync()
     {

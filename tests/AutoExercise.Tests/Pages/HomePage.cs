@@ -18,7 +18,7 @@ public class HomePage(IPage page)
     // Hero carousel repeats the heading once per slide; .First targets the active one
     public ILocator HeroHeading => page.Locator("#slider").GetByText(HeroText).First;
 
-    public async Task GoToAsync() => await page.GotoAsync("/");
+    public async Task GotoAsync() => await page.GotoAsync("/");
 
     public async Task ExpectLoadedAsync()
     {
