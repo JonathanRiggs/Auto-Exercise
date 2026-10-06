@@ -18,10 +18,16 @@ public class HeaderNav(IPage page)
     public ILocator TestCases => Link("Test Cases");
     public ILocator ContactUs => Link("Contact Us");
 
+    public ILocator LoggedInAs => Menu.GetByText("Logged in as");
+    public ILocator Logout => Link("Logout");
+    public ILocator DeleteAccount => Link("Delete Account");
+
     public Task GoToHomeAsyunc() => Home.ClickAsync();
     public Task GoToProductsAsync() => Products.ClickAsync();
     public Task GoToCartAsync() => Cart.ClickAsync();
     public Task GoToSignupLoginAsync() => SignupLogin.ClickAsync();
     public Task GoToTestCasesAsync() => TestCases.ClickAsync();
     public Task GoToContactUsAsync() => ContactUs.ClickAsync();
+    public Task LogoutAsync() => Logout.ClickAsync();
+    public Task DeleteAccountAsync() => DeleteAccount.ClickAsync();
 }
